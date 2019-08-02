@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wordbook"
+            android:title="단어장" />
+        <item
+            android:id="@+id/nav_wordsearch"
+            android:title="단어장검색" />
+        <item
+            android:id="@+id/nav_siteconnection"
+            android:title="번역하기" />
+        <item
+            android:id="@+id/nav_game"
+            android:title="학습게임" />
+        <item
+            android:id="@+id/nav_quiz"
+            android:title="퀴즈" />
+        <item
+            android:id="@+id/nav_sharewordbook"
+            android:title="단어장공유" />
+    </group>
+
+</menu>

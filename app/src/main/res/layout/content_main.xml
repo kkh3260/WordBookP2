@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageButton
+        android:id="@+id/imgwordbook_button"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/imggame_button"
+        app:layout_constraintEnd_toStartOf="@+id/imgwordsearch_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/voca" />
+
+    <ImageButton
+        android:id="@+id/imggame_button"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgquiz_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/game" />
+
+    <ImageButton
+        android:id="@+id/imgwordsearch_button"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgsiteconnection_button"
+        app:layout_constraintStart_toEndOf="@+id/imgwordbook_button"
+        app:layout_constraintTop_toTopOf="@+id/imgwordbook_button"
+        app:srcCompat="@mipmap/announce" />
+
+    <ImageButton
+        android:id="@+id/imgsharewordbook_button"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgquiz_button"
+        app:layout_constraintTop_toTopOf="@+id/imgquiz_button"
+        app:srcCompat="@mipmap/board" />
+
+    <ImageButton
+        android:id="@+id/imgquiz_button"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgsharewordbook_button"
+        app:layout_constraintStart_toEndOf="@+id/imggame_button"
+        app:layout_constraintTop_toTopOf="@+id/imggame_button"
+        app:srcCompat="@mipmap/quiz" />
+
+    <ImageButton
+        android:id="@+id/imgsiteconnection_button"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgwordsearch_button"
+        app:layout_constraintTop_toTopOf="@+id/imgwordsearch_button"
+        app:srcCompat="@mipmap/diction" />
+
+</android.support.constraint.ConstraintLayout>
